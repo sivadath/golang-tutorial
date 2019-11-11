@@ -1,7 +1,8 @@
-#Introduction:
+#**Introduction:**
+ 
  Introduction to packages and key concepts covered.
  
-#Keywords introduced:
+#**Keywords introduced:**
 
  1)package
  
@@ -13,7 +14,7 @@
  
  5)const
  
-#Functions introduced:
+#**Functions introduced:**
  
  1)make
  
@@ -21,7 +22,7 @@
  
  3)len
  
-#Data structures introduced:
+#**Data structures introduced:**
  
  1)map
  
@@ -31,7 +32,7 @@
  
  4)struct.
  
-#Few concepts included:
+#**Few concepts included:**
  
  1)exporting variables from package to package.
  
