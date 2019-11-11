@@ -1,4 +1,5 @@
-Introduction to packages.
+Introduction:
+ Introduction to packages and key concepts covered.
 Keywords introduced:
  1)package
  2)import
