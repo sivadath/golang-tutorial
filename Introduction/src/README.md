@@ -33,8 +33,11 @@
  4)struct.
  
 **Commands introduced:**
+ 
  1)go build
+ 
  2)go run
+ 
  3)godoc
  
 **Few concepts included:**
