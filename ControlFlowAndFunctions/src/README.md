@@ -34,6 +34,8 @@
  
  3)net
  
+ 4)os
+ 
 **Commands introduced:**
  
  1)go build -gcflags -m
