@@ -43,5 +43,3 @@
 # Few concepts included:
  
  1)exporting variables from package to package.
- 
- 2)exporting variable from package to package.
