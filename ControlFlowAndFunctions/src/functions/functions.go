@@ -6,6 +6,11 @@ import (
 	"runtime"
 )
 
+
+func init() {
+	fmt.Println("init of functions package invoked.")
+}
+
 //INLINE FUNCTION
 
 //Add will be made inline function by go compiler can be checked with go build flags go build -gcflags -m main.go
@@ -48,7 +53,7 @@ func AnonymousFunction() {
 		fmt.Println("Anonymous function called")
 		return i
 	}
-	fmt.Println(k)
+	fmt.Println("Name of the function invoked:",GetFunctionName(k))
 }
 
 
@@ -80,12 +85,12 @@ type Employee struct {
 }
 //Pass by value using pointer
 func Modify(sample *Employee) {
-	sample.Name = "Dath"
+	sample.Number = len(sample.Name)
 }
 
 //Pass by value
 func ModifyValue(sample Employee) {
-	sample.Name = "Dath"
+	sample.Number = len(sample.Name)
 }
 
 
