@@ -38,7 +38,7 @@
  
 # Commands introduced:
  
- 1)go build -gcflags -m
+    1)go build -gcflags -m
  
 # Few concepts included:
  
