@@ -1,8 +1,8 @@
-**Concepts covered:**
+# Concepts covered:
  
  Golang control flow and functions introduced.
  
-**Functions introduced**
+# Functions introduced
 
   1)Init function.
   
@@ -18,7 +18,7 @@
   
   7)Defer
  
-**Keywords introduced:**
+# Keywords introduced:
 
  1)if, else , switch, for.
  
@@ -26,7 +26,7 @@
  
  3)interface
  
-**Packages introduced:**
+# Packages introduced:
  
  1)fmt
  
@@ -36,10 +36,10 @@
  
  4)os
  
-**Commands introduced:**
+# Commands introduced:
  
  1)go build -gcflags -m
  
-**Few concepts included:**
+# Few concepts included:
  
  1)Pass by value.
