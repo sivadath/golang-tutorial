@@ -34,11 +34,11 @@
  
 # Commands introduced:
  
- 1)go build
+    1)go build
  
- 2)go run
+    2)go run
  
- 3)godoc
+    3)godoc
  
 # Few concepts included:
  
