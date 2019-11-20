@@ -1,9 +1,9 @@
-**Introduction:**
+**Concepts coverd:**
  
- Golang control flow using if,else, switch and for were explained.
+ Golang control flow and functions introduced.
  
- Below functions definition and use cases explained:
- 
+**Functions introduced**
+
   1)Init function.
   
   2)Inline function (not there in golang methods to see which functions were inline are explained).
@@ -15,6 +15,8 @@
   5)Function as expression.
   
   6)Call back function.
+  
+  7)Defer
  
 **Keywords introduced:**
 
