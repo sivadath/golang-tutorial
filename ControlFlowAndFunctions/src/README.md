@@ -1,4 +1,4 @@
-**Concepts coverd:**
+**Concepts covered:**
  
  Golang control flow and functions introduced.
  
