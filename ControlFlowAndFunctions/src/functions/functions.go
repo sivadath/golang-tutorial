@@ -1,14 +1,16 @@
 package functions
 
 import (
+	"flag"
 	"fmt"
 	"reflect"
 	"runtime"
 )
 
+var Fun string
 
 func init() {
-	fmt.Println("init of functions package invoked.")
+	flag.StringVar(&Fun,"fun","","Give type of function to invoke. Possible options inline,anonymous,variadic,callback,defer,passValue,passPointer,expression")
 }
 
 //INLINE FUNCTION

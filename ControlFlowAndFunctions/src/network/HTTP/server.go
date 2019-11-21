@@ -1,12 +1,18 @@
 package HTTP
 
 import (
+	"flag"
 	"fmt"
 	"log"
 	"net/http"
 	"os"
 	"strings"
 )
+var Network string
+
+func init() {
+	flag.StringVar(&Network,"network","","Give type of application to be started. Possible options server, client (default)")
+}
 
 func StartCaseConverterServer(port string) {
 	fmt.Println("HTTP case converter server started on port:", port)

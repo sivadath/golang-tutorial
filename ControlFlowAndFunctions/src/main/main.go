@@ -7,12 +7,10 @@ import (
 	"network/HTTP"
 	"strconv"
 )
+
 func main() {
-	var fun, network string
-	flag.StringVar(&fun,"fun","","Give type of function to invoke. Possible options inline,anonymous,variadic,callback,defer,passValue,passPointer,expression")
-	flag.StringVar(&network,"network","client","Give type of application to be started. Possible options server, client (default)")
 	flag.Parse()
-	switch fun {
+	switch functions.Fun {
 	case "inline" :
 		var a,b int
 		fmt.Println("Give two numbers:")
@@ -61,7 +59,7 @@ func main() {
 		functions.Modify(&emp)
 		fmt.Println("After passing employee data by passing pointer (we see number got updated):", emp)
 	}
-	if network == "client" {
+	if HTTP.Network == "client" {
 		for {
 			var ip, port, content string
 			fmt.Println("Give ipaddress of http server")
@@ -77,12 +75,12 @@ func main() {
 				break
 			}
 		}
-	}else if network == "server" {
+	}else if HTTP.Network == "server" {
 		var port string
 		fmt.Println("Give port number of http server")
 		fmt.Scan(&port)
 		HTTP.StartCaseConverterServer(port)
-	} else {
+	} else if HTTP.Network != "" {
 		fmt.Println("Invalid network option given check help to see valid options")
 	}
 }
