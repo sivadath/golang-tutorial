@@ -92,6 +92,9 @@ type Balls struct {}
 func (ball Balls)ParseEvent(event string) bool{
 	if strings.HasPrefix(strings.ToUpper(event),"B") {
 		event = event[1:]
+		if event[len(event)-1] == '\r' {
+			event = event[0:len(event)-1]
+		}
 		if ball, err := strconv.Atoi(event);err == nil {
 			scoreBoard.Balls = ball
 			return true
@@ -111,6 +114,9 @@ type Score struct {}
 func (score Score)Update(event string) {
 	if strings.HasPrefix(strings.ToUpper(event),"S"){
 		event = event[1:]
+		if event[len(event)-1] == '\r' {
+			event = event[0:len(event)-1]
+		}
 		if score, err := strconv.Atoi(event);err == nil {
 			scoreBoard.Score = score
 		}
