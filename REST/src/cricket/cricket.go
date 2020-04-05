@@ -8,6 +8,7 @@ import (
 	"os"
 	"strconv"
 	"strings"
+	"dath"
 )
 
 var scoreBoard ScoreCard
@@ -33,6 +34,7 @@ func EventListener() {
 }
 
 func main() {
+	fmt.Println(dath.D)
 	http.HandleFunc("/", home)
 	http.HandleFunc("/live-score/", liveScore)
 	scoreBoard.AddListener(Balls{})
